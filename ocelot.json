@@ -1,16 +1,88 @@
 {
     "Routes": [
         {
-        "DownstreamPathTemplate": "/api/users",
-        "DownstreamScheme": "http",
-        "DownstreamHostAndPorts": [
-            {
-                "Host": "localhost",
-                "Port": 6000
-            }
-        ],
-        "UpstreamPathTemplate": "/users",
-        "UpstreamHttpMethod": [ "Get" ]
+            "DownstreamPathTemplate": "/reviews/{all}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 7000 
+                }
+            ],
+            "UpstreamPathTemplate": "/reviews/{all}",
+            "UpstreamHttpMethod": [ "Put", "Delete", "Post" ]
+        },
+        {
+            "DownstreamPathTemplate": "/watchlist/{all}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 7000 
+                }
+            ],
+            "UpstreamPathTemplate": "/watchlist/{all}",
+            "UpstreamHttpMethod": [ "Get", "Delete", "Post" ]
+        },
+        {
+            "DownstreamPathTemplate": "/replies/{all}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 7000 
+                }
+            ],
+            "UpstreamPathTemplate": "/replies/{all}",
+            "UpstreamHttpMethod": [ "Delete", "Post" ]
+        },
+        {
+            "DownstreamPathTemplate": "/likes/{all}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 7000 
+                }
+            ],
+            "UpstreamPathTemplate": "/likes/{all}",
+            "UpstreamHttpMethod": [ "Delete", "Post" ]
+        },
+        {
+            "DownstreamPathTemplate": "/search/{all}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 7000 
+                }
+            ],
+            "UpstreamPathTemplate": "/search/{all}",
+            "UpstreamHttpMethod": [ "Get" ]
+        },
+        {
+            "DownstreamPathTemplate": "/movies/{all}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 7000 
+                }
+            ],
+            "UpstreamPathTemplate": "/movies/{all}",
+            "UpstreamHttpMethod": [ "Get" ]
+        },
+        {
+            "DownstreamPathTemplate": "/fetch/{all}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 7000 
+                }
+            ],
+            "UpstreamPathTemplate": "/fetch/{all}",
+            "UpstreamHttpMethod": [ "Get" ]
         }
     ],
     "GlobalConfiguration": {
