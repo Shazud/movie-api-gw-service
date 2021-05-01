@@ -1,6 +1,30 @@
 {
     "Routes": [
         {
+            "DownstreamPathTemplate": "/api/users",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 6000 
+                }
+            ],
+            "UpstreamPathTemplate": "/users",
+            "UpstreamHttpMethod": [ "Get", "Put", "Post", "Delete" ]
+        },
+        {
+            "DownstreamPathTemplate": "/api/users/{all}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 6000 
+                }
+            ],
+            "UpstreamPathTemplate": "/users/{all}",
+            "UpstreamHttpMethod": [ "Get", "Put", "Post", "Delete" ]
+        },
+        {
             "DownstreamPathTemplate": "/reviews/{all}",
             "DownstreamScheme": "http",
             "DownstreamHostAndPorts": [
