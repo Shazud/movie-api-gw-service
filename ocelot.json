@@ -5,8 +5,9 @@
             "DownstreamScheme": "http",
             "DownstreamHostAndPorts": [
                 {
-                    "Host": "localhost",
-                    "Port": 6000 
+                    
+                    "Host": "users-manager-service",
+		    "Port": 6000 
                 }
             ],
             "UpstreamPathTemplate": "/users",
@@ -17,8 +18,9 @@
             "DownstreamScheme": "http",
             "DownstreamHostAndPorts": [
                 {
-                    "Host": "localhost",
-                    "Port": 6000 
+                    
+                    "Host": "users-manager-service",
+		    "Port": 6000 
                 }
             ],
             "UpstreamPathTemplate": "/users/{all}",
@@ -29,8 +31,9 @@
             "DownstreamScheme": "http",
             "DownstreamHostAndPorts": [
                 {
-                    "Host": "localhost",
-                    "Port": 7000 
+                    
+                    "Host": "movie-manager-service",
+		    "Port": 7000 
                 }
             ],
             "UpstreamPathTemplate": "/reviews/{all}",
@@ -41,8 +44,9 @@
             "DownstreamScheme": "http",
             "DownstreamHostAndPorts": [
                 {
-                    "Host": "localhost",
-                    "Port": 7000 
+                    
+                    "Host": "movie-manager-service",
+		    "Port": 7000 
                 }
             ],
             "UpstreamPathTemplate": "/watchlist/{all}",
@@ -53,8 +57,9 @@
             "DownstreamScheme": "http",
             "DownstreamHostAndPorts": [
                 {
-                    "Host": "localhost",
-                    "Port": 7000 
+                    
+                    "Host": "movie-manager-service",
+		    "Port": 7000 
                 }
             ],
             "UpstreamPathTemplate": "/replies/{all}",
@@ -65,8 +70,9 @@
             "DownstreamScheme": "http",
             "DownstreamHostAndPorts": [
                 {
-                    "Host": "localhost",
-                    "Port": 7000 
+                    
+                    "Host": "movie-manager-service",
+		    "Port": 7000 
                 }
             ],
             "UpstreamPathTemplate": "/likes/{all}",
@@ -77,8 +83,9 @@
             "DownstreamScheme": "http",
             "DownstreamHostAndPorts": [
                 {
-                    "Host": "localhost",
-                    "Port": 7000 
+                    
+                    "Host": "movie-manager-service",
+		    "Port": 7000 
                 }
             ],
             "UpstreamPathTemplate": "/search/{all}",
@@ -89,8 +96,9 @@
             "DownstreamScheme": "http",
             "DownstreamHostAndPorts": [
                 {
-                    "Host": "localhost",
-                    "Port": 7000 
+                    
+                    "Host": "movie-manager-service",
+		    "Port": 7000 
                 }
             ],
             "UpstreamPathTemplate": "/movies/{all}",
@@ -101,8 +109,9 @@
             "DownstreamScheme": "http",
             "DownstreamHostAndPorts": [
                 {
-                    "Host": "localhost",
-                    "Port": 7000 
+                    
+                    "Host": "movie-manager-service",
+		    "Port": 7000 
                 }
             ],
             "UpstreamPathTemplate": "/fetch/{all}",
